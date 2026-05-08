@@ -1,4 +1,7 @@
 # Chess-position-analysis-results
+
+> **Note:** This is a fork of [neilgd/chess-position-analysis-results](https://github.com/neilgd/chess-position-analysis-results). It includes additional scripts for generating PDFs with the puzzle positions.
+
 This is a project to find positionally interesting chess positions that can be used for puzzles. The idea is that there are loads of resources for tactical puzzles, but not as many for positional puzzles.
 
 # Using this work
@@ -49,6 +52,25 @@ The PGN files contain custom headers for the themes and difficulty. You can load
 
 ## CSV
 CSV files with the positions, best move, and categories
+
+## Scripts
+The `scripts/` folder contains tools for generating PDFs with the puzzle positions:
+
+```bash
+# Generate a full PDF with all positions
+python3 scripts/generate-pdf.py
+
+# Generate PDF grouped by difficulty (creates chapters)
+python3 scripts/generate-pdf.py --group-by-difficulty -o data/puzzles.pdf
+
+# Filter by theme(s) and/or difficulty
+python3 scripts/generate-pdf.py --theme endgame --difficulty 1 --difficulty 2 -o data/endgame-easy.pdf
+
+# See all options
+python3 scripts/generate-pdf.py --help
+```
+
+See [`scripts/README.md`](scripts/README.md) for full documentation.
 
 # Small plug
 Looking for a place to play high quality, classical games of chess? Check out [Lichess Ladders](https://lichessladders.com)
