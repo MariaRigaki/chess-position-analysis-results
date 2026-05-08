@@ -58,16 +58,16 @@ The `scripts/` folder contains tools for generating PDFs with the puzzle positio
 
 ```bash
 # Generate a full PDF with all positions
-python3 scripts/generate-pdf.py
+python3 scripts/generate_pdf.py
 
 # Generate PDF grouped by difficulty (creates chapters)
-python3 scripts/generate-pdf.py --group-by-difficulty -o data/puzzles.pdf
+python3 scripts/generate_pdf.py --group-by-difficulty -o data/puzzles.pdf
 
 # Filter by theme(s) and/or difficulty
-python3 scripts/generate-pdf.py --theme endgame --difficulty 1 --difficulty 2 -o data/endgame-easy.pdf
+python3 scripts/generate_pdf.py --theme endgame --difficulty 1 --difficulty 2 -o data/endgame-easy.pdf
 
 # See all options
-python3 scripts/generate-pdf.py --help
+python3 scripts/generate_pdf.py --help
 ```
 
 See [`scripts/README.md`](scripts/README.md) for full documentation.

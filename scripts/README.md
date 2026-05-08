@@ -5,7 +5,7 @@ Generate PDFs with chess position diagrams from the dataset.
 ## Usage
 
 ```bash
-python3 generate-pdf.py [options]
+python3 generate_pdf.py [options]
 ```
 
 ## Options
@@ -24,45 +24,45 @@ python3 generate-pdf.py [options]
 
 ### Generate full PDF with all positions
 ```bash
-python3 generate-pdf.py
+python3 generate_pdf.py
 ```
 
 ### Generate PDF grouped by difficulty (creates chapter pages)
 ```bash
-python3 generate-pdf.py --group-by-difficulty -o data/full-collection.pdf
+python3 generate_pdf.py --group-by-difficulty -o data/full-collection.pdf
 ```
 
 ### Filter by theme(s)
 ```bash
 # Single theme
-python3 generate-pdf.py --theme endgame -o data/endgame-puzzles.pdf
+python3 generate_pdf.py --theme endgame -o data/endgame-puzzles.pdf
 
 # Multiple themes (positions matching any of the themes)
-python3 generate-pdf.py --theme coordination --theme restriction -o data/coord-restriction.pdf
+python3 generate_pdf.py --theme coordination --theme restriction -o data/coord-restriction.pdf
 ```
 
 ### Filter by difficulty
 ```bash
 # Easy and moderate only
-python3 generate-pdf.py --difficulty 1 --difficulty 2 -o data/easy-moderate.pdf
+python3 generate_pdf.py --difficulty 1 --difficulty 2 -o data/easy-moderate.pdf
 
 # Hard and very hard
-python3 generate-pdf.py --difficulty 3 --difficulty 4 -o data/hard-positions.pdf
+python3 generate_pdf.py --difficulty 3 --difficulty 4 -o data/hard-positions.pdf
 ```
 
 ### Combine filters with chapter grouping
 ```bash
-python3 generate-pdf.py --theme endgame --difficulty 2 --difficulty 3 --group-by-difficulty -o data/endgame-mid-level.pdf
+python3 generate_pdf.py --theme endgame --difficulty 2 --difficulty 3 --group-by-difficulty -o data/endgame-mid-level.pdf
 ```
 
 ### Generate a quick preview
 ```bash
-python3 generate-pdf.py --preview -o data/preview.pdf
+python3 generate_pdf.py --preview -o data/preview.pdf
 ```
 
 ### List all available themes
 ```bash
-python3 generate-pdf.py --list-themes
+python3 generate_pdf.py --list-themes
 ```
 
 ## Available Themes
